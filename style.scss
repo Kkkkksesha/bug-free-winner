@@ -1,0 +1,696 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto; 
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+body{
+    font-family: Raleway;
+}
+$color: #181818;
+$pudding: 15px 24px 17px 24px;
+@mixin border {
+    border-top: 2px solid black;
+    border-radius: 8px;
+    text-decoration: none;
+    width: 215px;
+    border: solid;
+    text-align: center;
+}
+@mixin secBorder {
+    border-top: 1px solid black;
+    border: 1px solid;
+    text-align: center;
+    border-radius: 100px;
+    padding: 4px 16px 4px 16px;
+}
+@mixin form {
+    padding: 20px 16pc 12px 16px;
+    border-radius: 8px;
+    border: 1px solid var(--dbdbdb-stroke, #DBDBDB);
+    color: var(--808080-secondary-black, #808080);
+    margin-bottom: 24px;
+}
+@mixin cost {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+@mixin form2 {
+    border-radius: 8px;
+    background: var(--fff-white, #FFF);
+    padding: 12px 16px;
+    border: 1px solid var(--dbdbdb-stroke, #DBDBDB);
+    width: 400px;
+    color: var(--808080-secondary-black, #808080);
+    margin-bottom: 24px;
+}
+@mixin button {
+   border-radius: 8px;
+   background: #181818;
+   color: white;
+   text-decoration: none;
+   width: 400px;
+   text-align: center;
+}
+
+// header
+header{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    ul {
+        list-style-type: none;
+        display: flex;
+        margin-top: 10px;
+        li{
+            margin-left: 20px;
+            cursor: pointer;
+        }
+        }
+}
+
+.header_dev{
+    width: 110px;
+    height: 35px;
+}
+
+.header_boy{
+    margin-top: 20px;
+}
+// header
+// tilde
+h1{
+    font-size: 64px;
+    text-align: center;
+    max-width: 805px;
+    margin: 0 auto;
+}
+.tilde_text{
+    max-width: 485px;
+    margin: 40px auto;
+}
+.tilde_box1{
+    display: flex;
+}
+.tilde_letter{
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    margin-left: 110px;
+    margin-top: 50px;
+}
+.tilde_box2{
+    display: flex;
+    justify-content: space-around
+}
+.tilde_button1{
+    @include border;
+    background-color: $color;
+    color: white;
+    margin-right: 10px;
+    padding: 22px 24px 22px;
+}
+.tilde_button2{
+    @include border;
+    color: $color;
+    display: flex;
+    margin-left: 10px;
+    margin-top: 3px;
+    padding: 17px 24px 26px;
+    height: 14px;
+}
+.tilde_st{
+    width: 25px;
+    height: 25px;
+    margin-left: 20px;
+}
+.tilde_tx{
+    margin-left: 10px;
+    margin-top: 4px;
+}
+.tilde_light{
+    position: absolute;
+    right: 200px;
+}
+.tilde_buttons{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+// tilde
+// sites
+.sites_menu{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    
+    li{
+       @include secBorder; 
+       margin-left: 10px;
+       margin-bottom: 40px;
+       cursor: pointer;
+    }
+}
+.sites_all{
+    border-top: 1px solid $color;
+    border: 1px solid;
+    text-align: center;
+    border-radius: 100px;
+    padding: 4px 16px 4px 16px;
+    background-color: $color;
+    color: white;
+}
+.sites_projects{
+    display: flex;
+    flex-wrap: wrap;
+
+    img{
+        margin-bottom: 40px;
+    }
+}
+.sites_pr{
+    margin-left: 20px;
+}
+.sites_pr2{
+    width: 1140px;
+}
+.sites_man{
+    display: flex;
+    justify-content: center;
+
+    h2{
+        font-size: 46px;
+        padding-top: 80px;
+    }
+}
+.sites_card{
+    width: 480px;
+    margin-left: 20px;
+}
+.sites_pic{
+    margin-left: 85px;
+}
+
+.sites_text{
+    margin-top: 40px;
+}
+.sites_num{
+    margin-top: 60px;
+    display: flex;
+
+    div{
+        width: 80px;
+        margin-right: 65px;
+    }
+}
+.sites_plus{
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: 600;
+}
+// sites
+// services
+.services_hood{
+    background-color: $color;
+    margin-top: 120px;
+}
+.services_hed{
+    font-size: 46px;
+    color:white;
+    padding-top: 120px;
+    text-align: center;
+}
+.services_cards{
+    display: flex;
+
+    div{
+        width: 310px;
+        background-color: #fff;
+        border-radius: 16px;
+        padding: 40px;
+        margin-top: 80px;
+        margin-bottom: 120px;
+    }
+}
+.services_card{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.servives_num{
+    opacity: 0.5;
+    margin-bottom: 8px;
+}
+.services_heading{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+.services_text{
+    width: 288px;
+    margin-bottom: 112px;
+}
+.services_price{
+    font-size: 24px;
+    font-weight: 600;
+}
+// services
+// price
+.price_heading{
+    font-size: 46px;
+    color: $color;
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 80px;
+}
+.price_form{
+    width: 450px;
+    border-radius: 16px;
+    border: 1px solid #CCC; 
+    display: flex;
+    margin-left: 220px;
+    flex-direction: column;
+    padding: 40px 24px 40px 24px;
+}
+.prices_value1{
+    @include form;
+}
+.prices_value2{
+    @include form;
+}
+.price_agree{
+    width: 330px;
+}
+.price_button{
+    width: 400px;
+    text-align: center;
+    padding: $pudding;
+    border-radius: 8px;
+    border: 2px solid $color;
+    text-decoration: none;
+    margin-top: 40px;
+    color: $color;
+    font-weight: 600;
+}
+.price_box{
+    display: flex;
+}
+.price_time{
+    width: 100px;
+    height: 100px;
+}
+.price_boy{
+    width: 170px;
+    height: 170px;
+    margin-top: 110px;
+    margin-left: 160px;
+}
+.price_box2{
+    padding: 40px 24px;
+    align-items: flex-start;
+    border-radius: 0px 0px 16px 16px;
+    border: 1px solid #CCC;
+    width: 400px;
+    margin: 0 auto;
+}
+.price_money{
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+.price_num{
+    @include cost;
+}
+.price_days{
+   @include cost;
+   margin-bottom: 40px;
+}
+.price_button2{
+   padding: $pudding;
+   @include button;
+   padding-left: 135px;
+   padding-right: 133px;
+}
+// price
+// answer
+.answer_hood{
+    background-color:$color;
+}
+.answer_head{
+    font-size: 46px;
+    font-weight: 600;
+    color: #fff;
+    padding-top: 120px;
+    margin-bottom: 80px;
+    text-align: center;
+    margin-top: 120px;
+}
+details{
+    display:block;
+
+    p{
+        padding: 32px 40px 0 40px;
+    }
+
+    ul{
+        padding-bottom: 40px;
+        margin-bottom: 34px;
+    }
+
+    li{
+        margin-top: 8px;
+        margin-left: 58px;
+    }
+}
+.answer_card{
+    background-color: #fff;
+    border-radius: 16px;
+}
+summary::-webkit-details-marker{display:none;}
+summary::-moz-list-bullet{list-style-type:none;}
+summary::marker{display:none;} 
+summary {
+    padding: 32px 40px; 
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 16px;
+    border: 1px solid #CCC;
+    background: #FFF;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+summary:after {  
+    content: url(img/Frame\ 694.png);
+    
+}
+details[open] > summary:after {
+    content: url(img/Frame\ 693.png);
+}  
+.answer_box{
+    padding-bottom: 120px;
+}
+// answer
+// application
+.applications_box{
+    display: flex;
+}
+.application_light{
+    margin: 134px 170px 0 111px;
+}
+.application_head{
+    font-size: 46px;
+    font-weight: 600;
+    padding-top: 120px;
+}
+.application_text{
+    font-size: 20px;
+    font-weight: 600;
+}
+.application_card{
+    display: flex;
+}
+.application_letter{
+    width: 120px;
+    height: 120px;
+    margin: 518px 60px 116px 150px;
+}
+.application_social{
+    width: 24px;
+    height: 104px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+.application_boy{
+    width: 170px;
+    height: 170px;
+    margin: 300px auto auto 150px;
+}
+.application_form{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 24px;
+    border-radius: 16px;
+    border: 1px solid #CCC;
+    background: #FFF;
+    height: 510px;
+
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+}
+.application_name{
+    @include form2;
+}
+.application_email{
+    @include form2;
+}
+.application_services{
+    @include form2;
+    width: 435px;
+}
+.application_com{
+    @include form2;
+    padding-bottom: 150px;
+}
+.application_button{
+    @include button;
+    padding: $pudding;
+    margin-top: 32px;
+}
+// application
+@media (max-width:1024px){
+    .container {
+        padding-left: 32px;
+        padding-right: 32px;   
+     }
+     .header_boy{
+        display: none;
+    }
+   .tilde_letter{
+    display: none;
+   }
+   .tilde_light{
+    display: none;
+   }
+   .sites_pr2{
+    width: 560px;
+    margin: 0 auto;
+   }
+   .sites_pr{
+    margin: 0 auto;
+   }
+   .sites_pr1{
+    margin: 0 auto;
+   }
+   .sites_pic{
+    width: 300px;
+    height: 460px;
+    margin-left: 0;
+   }
+   .sites_man{
+
+    h2{
+        padding-top: 0;
+    }
+  }
+   .sites_card{
+    width: 310px; 
+ }
+ .services_cards{
+    display: flex;
+    flex-wrap: wrap;
+    div{
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+ }
+ .services_card{
+    margin: 0 auto;
+ }
+ .services_card1{
+    margin: 0 auto;
+ }
+ .price_time{
+    display: none;
+ }
+ .price_boy{
+    display: none;
+ }
+ .price_form{
+    margin: 0 auto;
+ }
+ .application_light{
+    display: none;
+ }
+ .application_letter{
+    display: none;
+ }
+ .application_boy{
+    display: none;
+ }
+ .application_tx{
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 40px;
+ }
+ .application_card{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-left: 60px;
+ }
+ h1{
+    margin-top: 40px;
+ }
+}
+@media (max-width:667px){
+    .burger_menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+        padding: 10px 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+      }
+      
+      .burger_menu_icon {
+        width: 30px;
+        height: 20px;
+        background-color: #333;
+        position: relative;
+      }
+      
+      .burger_menu_icon:before,
+      .burger_menu_icon:after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+      }
+      
+      .burger_menu_icon:before {
+        top: -8px;
+      }
+      
+      .burger_menu_icon:after {
+        bottom: -8px;
+      }
+      
+      .header_menu {
+        display: none;
+        position: absolute;
+        top: calc(100% + 10px);
+        left: -10px;
+        padding: 10px;
+        background-color: #fff;
+      }
+      
+      .header_menu li {
+        list-style-type: none;
+        margin-bottom: 10px;
+      }
+      
+      .burger_menu:hover .header_menu {
+        display: block;
+      }
+
+h1{
+    font-size: 36px;
+}  
+.tilde_buttons{
+    display: flex;
+    flex-direction: column;
+}
+.tilde_button2{
+    margin-left: 0;
+}
+.sites_menu{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sites_pr2{
+    width: 300px;
+    margin: 0 auto;
+   }
+   .sites_pr{
+    margin: 0 auto;
+    width: 300px;
+   }
+   .sites_pr1{
+    margin: 0 auto;
+    width: 300px;
+   }
+   .sites_man{
+    display: flex;
+    flex-direction: column;
+   }
+   .sites_card{
+    margin-left: 0;
+   }
+   .services_cards{
+    display: flex;
+
+    div{
+        width: 250px;
+        padding: 20px;
+    }
+}
+.services_text{
+    width: 230px;
+}
+.price_form{
+    width: 280px;
+    margin-left: 0;
+}
+.price_button{
+    width: 230px;
+}
+.price_box2{
+    width: 250px;
+    margin-left: 15px;
+}
+.price_button2{
+    padding-left: 55px;
+    padding-right: 53px;
+ }
+ .application_form{
+    width: 240px;
+    margin-left: 0;
+ }
+ .application_name{
+    width: 220px;
+}
+.application_email{
+    width: 220px;
+}
+.application_services{
+    width: 260px;
+}
+.application_com{
+    width: 220px;
+    padding-bottom: 150px;
+}
+.application_button{
+   padding: 12px 16px;
+   width: 220px;
+}
+.application_social{
+    margin-left: 0;
+}
+}
